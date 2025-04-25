@@ -1,0 +1,5 @@
+{
+  "extends": "@senka/tsconfig/internal-package.json",
+  "include": ["src", "../../apps/scheduler/src/lib/bsky/store-posts.ts"],
+  "exclude": ["node_modules"]
+}

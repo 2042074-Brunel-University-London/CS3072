@@ -1,0 +1,76 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# testing
+coverage
+
+# next.js
+.next/
+out/
+next-env.d.ts
+
+# nitro
+.nitro/
+.output/
+
+# expo
+.expo/
+expo-env.d.ts
+apps/expo/.gitignore
+apps/expo/ios
+apps/expo/android
+
+# production
+build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+dist/
+.cache
+
+# turbo
+.turbo
+apps/models/cached/dga_preprocessed_dataset/dataset_dict.json
+apps/models/cached/dga_preprocessed_dataset/test/cache-1e05d0b3be001bda_00000_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/test/cache-1e05d0b3be001bda_00001_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/test/cache-1e05d0b3be001bda_00002_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/test/cache-1e05d0b3be001bda_00003_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/test/cache-1e05d0b3be001bda_00004_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/test/cache-1e05d0b3be001bda_00005_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/test/cache-1e05d0b3be001bda_00006_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/test/cache-1e05d0b3be001bda_00007_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/test/data-00000-of-00001.arrow
+apps/models/cached/dga_preprocessed_dataset/test/dataset_info.json
+apps/models/cached/dga_preprocessed_dataset/test/state.json
+apps/models/cached/dga_preprocessed_dataset/train/cache-1cc361df0435c6fe_00000_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/train/cache-1cc361df0435c6fe_00001_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/train/cache-1cc361df0435c6fe_00002_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/train/cache-1cc361df0435c6fe_00003_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/train/cache-1cc361df0435c6fe_00004_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/train/cache-1cc361df0435c6fe_00005_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/train/cache-1cc361df0435c6fe_00006_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/train/cache-1cc361df0435c6fe_00007_of_00008.arrow
+apps/models/cached/dga_preprocessed_dataset/train/data-00000-of-00002.arrow
+apps/models/cached/dga_preprocessed_dataset/train/data-00001-of-00002.arrow
+apps/models/cached/dga_preprocessed_dataset/train/dataset_info.json
+apps/models/cached/dga_preprocessed_dataset/train/state.json

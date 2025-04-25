@@ -1,0 +1,4 @@
+{
+  "extends": "@senka/tsconfig/base.json",
+  "include": ["routes"]
+}

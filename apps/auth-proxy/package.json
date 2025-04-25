@@ -1,0 +1,28 @@
+{
+  "name": "@senka/auth-proxy",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nitro build",
+    "clean": "git clean -xdf .cache .nitro .output .turbo .vercel node_modules",
+    "lint": "eslint",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@auth/core": "0.37.2"
+  },
+  "devDependencies": {
+    "@senka/eslint-config": "workspace:*",
+    "@senka/prettier-config": "workspace:*",
+    "@senka/tailwind-config": "workspace:*",
+    "@senka/tsconfig": "workspace:*",
+    "@types/node": "^22.10.10",
+    "eslint": "catalog:",
+    "h3": "^1.14.0",
+    "nitropack": "^2.10.4",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  },
+  "prettier": "@senka/prettier-config"
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@senka/scheduler",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./add-job": "./src/utils/add-job.ts",
+    "./start-worker-utils": "./src/utils/start-worker-utils.ts"
+  },
+  "scripts": {
+    "clean": "git clean -xdf .next .turbo node_modules",
+    "start": "pnpm with-env tsx src/worker.ts",
+    "dev": "NODE_ENV=development pnpm with-env tsx watch --clear-screen=false src/worker.ts",
+    "dev:start": "cross-env NODE_ENV=development pnpm with-env tsx src/worker.ts",
+    "test": "pnpm with-env vitest --project=unit",
+    "test:ui": "pnpm with-env vitest --ui --coverage.enabled=true",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.13.18",
+    "@senka/db": "workspace:*",
+    "@t3-oss/env-core": "^0.12.0",
+    "@t3-oss/env-nextjs": "^0.12.0",
+    "@trpc/client": "catalog:",
+    "@trpc/server": "catalog:",
+    "ai": "^3.4.3",
+    "axios": "^1.7.9",
+    "graphile-worker": "^0.16.6",
+    "superjson": "2.2.2",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@senka/api": "workspace:*",
+    "@senka/eslint-config": "workspace:*",
+    "@senka/prettier-config": "workspace:*",
+    "@senka/tsconfig": "workspace:*",
+    "@types/node": "^22.10.10",
+    "dotenv-cli": "^8.0.0",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "tsx": "^3.14.0",
+    "typescript": "catalog:"
+  },
+  "prettier": "@senka/prettier-config"
+}
